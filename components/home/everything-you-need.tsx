@@ -58,7 +58,7 @@ your digital assets with confidence.`,
       <Image
         src={image4.src}
         alt="Hold & Manage Your World Currencies"
-        className="w-full h-full object-cover translate-y-9"
+        className="w-full h-full object-cover sm:translate-y-9"
         width={1000}
         height={1000}
       />

@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         <p className="text-center text-sm text-[#475467] lg:text-right">
-          © 2077 Uzel. All rights reserved.
+          © {new Date().getFullYear()} Uzelplay. All rights reserved.
         </p>
       </div>
     </footer>

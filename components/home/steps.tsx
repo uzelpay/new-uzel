@@ -23,17 +23,19 @@ const SimpleSteps = () => {
       image: step1,
     },
     {
-      title: "Create an account",
-      description:
-        "Sign up with your email or phone, complete a quick and secure KYC process, and gain instant access to your Uzel account.",
+      title: "Flexible Funding Options",
+      description: `Easily fund your multi-currency wallets via
+direct bank transfers using your unique Uzel account number, or instantly withdebit/credit card payments. We integrate with local payment gateways for your convenience.`,
       activeicon: thumbprintactive,
       inactiveicon: thumbprint,
       image: step2,
     },
     {
-      title: "Create an account",
-      description:
-        "Sign up with your email or phone, complete a quick and secure KYC process, and gain instant access to your Uzel account.",
+      title: "Seamless Transactions, Total Control.",
+      description: `Send money to other Uzel
+users or external bank accounts with ease. Manage beneficiaries, track your
+transaction history, and receive real-time notifications for all your financial activities.
+Uzel keeps you informed and in contro`,
       activeicon: swipeactive,
       inactiveicon: swipe,
       image: step3,
