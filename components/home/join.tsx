@@ -12,7 +12,7 @@ const Join = () => {
             Ready to Take Control of Your Money?
           </h2>
           <p className="text-base f text-[#D5E2FF] sm:text-lg max-w-[480px] mx-auto">
-            Join thousands already managing their local and global finances the
+            Join millions already managing their local and global finances the
             smart way with UZEL.
           </p>
           <Link href="/waitlist">
