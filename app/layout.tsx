@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Uzelplay",
-    template: "%s | Uzel",
+    default: "UZEL SmartPay",
+    template: "%s | UZEL SmartPay",
   },
   description:
-    "Uzelpay streamlines your path to financial freedom with secure onboarding, smart tools, and effortless money management.",
+    "UZEL SmartPay (UZEL TECHNOLOGIES LLC) streamlines your path to financial freedom with secure onboarding, smart tools, and effortless money management.",
   manifest: "/site.webmanifest",
   icons: {
     icon: [

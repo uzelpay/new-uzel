@@ -1,11 +1,11 @@
 {
-  "name": "Uzelplay",
-  "short_name": "Uzelpay",
+  "name": "UZEL SmartPay",
+  "short_name": "UZEL SmartPay",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
-  "description": "Uzelpay gives you the tools to manage your finances with confidence and unlock financial freedom.",
+  "description": "UZEL SmartPay gives you the tools to manage your finances with confidence and unlock financial freedom.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

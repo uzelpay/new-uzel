@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { COMPANY } from "@/lib/company";
 
 const AboutUsSection = () => {
   return (
@@ -16,9 +17,10 @@ const AboutUsSection = () => {
 
         <div className="space-y-4 text-base leading-7 text-[#475467] sm:text-lg">
           <p>
-            Uzel SmartPay is a next-generation financial technology company
-            building a borderless financial ecosystem that empowers individuals
-            and businesses to transact seamlessly across the globe.
+            {COMPANY.brandName} ({COMPANY.legalName}, DBA {COMPANY.dbaName}) is
+            a next-generation financial technology company building a borderless
+            financial ecosystem that empowers individuals and businesses to
+            transact seamlessly across the globe.
           </p>
           <p>
             We are revolutionizing how people manage their finances by

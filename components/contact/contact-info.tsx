@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
+import { COMPANY, formatCompanyAddress } from "@/lib/company";
 
 const ContactInfo = () => {
   return (
@@ -53,7 +54,7 @@ const ContactInfo = () => {
             >
               +1 (234) 567-890
             </Link>
-            <p className="text-xs text-[#99A0AE]">Mon-Fri, 9AM-5PM GMT</p>
+            <p className="text-xs text-[#99A0AE]">Mon–Fri, 9AM–5PM ET</p>
           </div>
         </div>
 
@@ -66,12 +67,11 @@ const ContactInfo = () => {
             Visit us at our headquarters
           </p>
           <address className="not-italic text-sm leading-6 text-[#475467]">
-            <p className="font-medium text-[#101828]">Singapore Office</p>
-            <p>68 Circular Road, #02-01</p>
-            <p>Singapore, 049422</p>
-            <p className="mt-4 font-medium text-[#101828]">Abuja Office</p>
-            <p>BLK B1, Kontangora Estate</p>
-            <p>Gwagwalada, FCT Abuja</p>
+            <p className="font-medium text-[#101828]">{COMPANY.legalName}</p>
+            <p className="text-xs text-[#667085]">DBA {COMPANY.dbaName}</p>
+            {formatCompanyAddress().map((line) => (
+              <p key={line}>{line}</p>
+            ))}
           </address>
         </div>
       </div>

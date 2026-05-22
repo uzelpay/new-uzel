@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { COMPANY, formatCompanyAddress } from "@/lib/company";
 import logo from "@/public/logo.svg";
 
 const Footer = () => {
@@ -24,6 +25,18 @@ const Footer = () => {
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col gap-4">
               <h3 className="text-xl font-semibold uppercase tracking-wide">
+                Company
+              </h3>
+              <div className="text-base leading-7 text-[#475467]">
+                <p className="font-medium text-[#101828]">{COMPANY.legalName}</p>
+                <p className="mt-1">
+                  DBA: <span className="font-medium">{COMPANY.dbaName}</span>
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <h3 className="text-xl font-semibold uppercase tracking-wide">
                 Contact
               </h3>
               <div className="flex flex-col gap-2 text-base text-[#475467]">
@@ -44,23 +57,14 @@ const Footer = () => {
 
             <div className="flex flex-col gap-4">
               <h3 className="text-xl font-semibold uppercase tracking-wide">
-                Head Office
-              </h3>
-              <address className="not-italic text-base leading-7 text-[#475467]">
-                68 Circular Road, #02-01,
-                <br />
-                Singapore, 049422
-              </address>
-            </div>
-
-            <div className="flex flex-col gap-4">
-              <h3 className="text-xl font-semibold uppercase tracking-wide">
                 Address
               </h3>
               <address className="not-italic text-base leading-7 text-[#475467]">
-                BLK B1, Kontangora Estate,
-                <br />
-                Gwagwalada, FCT Abuja
+                {formatCompanyAddress().map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
               </address>
             </div>
           </div>
@@ -68,7 +72,11 @@ const Footer = () => {
 
         <div className="mt-12 flex flex-col gap-4 border-t border-[#EAECF0] pt-8 text-sm text-[#475467] sm:flex-row sm:items-center sm:justify-between">
           <p className="text-center sm:text-left">
-            © {new Date().getFullYear()} UZEL. All rights reserved.
+            © {new Date().getFullYear()} {COMPANY.legalName}. All rights
+            reserved.
+            <span className="mt-1 block text-xs text-[#667085]">
+              Doing business as {COMPANY.dbaName}
+            </span>
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:justify-end sm:gap-6">
             <Link
